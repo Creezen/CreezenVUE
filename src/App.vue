@@ -1,25 +1,25 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App" num="freg"/>
+    <h1 class="title">后台管理系统</h1>
+    <ManagerPanel class="rooter"></ManagerPanel>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ManagerPanel from './components/ManagerPanel'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        "ManagerPanel": ManagerPanel
+    },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+h1 {
+    text-align: center;
+}
+
+.rooter {
+    background: #e7efca;
 }
 </style>
